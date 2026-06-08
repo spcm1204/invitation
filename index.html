@@ -107,8 +107,8 @@
             font-size: 20pt;
         }
         .greeting {
-            font-size: 8pt;
-            line-height: 1.8;
+            font-size: 7.8pt;
+            line-height: 2.0;
             color: #444;
         }
         .divider-icon {
@@ -135,6 +135,7 @@
             font-size: 8.5pt;
             font-weight: 600;
             line-height: 1.6;
+            color: #6a7f5d;
         }
         .location-addr {
             font-size: 7.5pt;
@@ -150,19 +151,43 @@
             color: #888;
             margin: 0 2px;
         }
+        .section-divider {
+            width: 100%;
+            height: 1px;
+            background-color: #eaeaea;
+        }
+        .bottom-info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 100%;
+            padding: 0 2mm;
+        }
+        .parking-info {
+            text-align: left;
+            font-size: 6pt;
+            color: #555;
+            line-height: 1.8;
+        }
+        .parking-title {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 2mm;
+            font-size: 7pt;
+        }
         .qr-section {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
         .qr-img {
-            width: 20mm;
-            height: 20mm;
-            margin-bottom: 2mm;
+            width: 16mm;
+            height: 16mm;
+            margin-bottom: 1.5mm;
             object-fit: contain;
         }
         .qr-text {
-            font-size: 6.5pt;
+            font-size: 5.5pt;
             color: #666;
             letter-spacing: -0.5px;
         }
@@ -204,11 +229,10 @@
         <div class="back-header">Wedding Invitation</div>
 
         <div class="greeting">
-            캠퍼스 강의실에서 시작된 저희의 인연이<br>
-            이제는 같은 회사에서 가장 든든한 동료이자<br>
-            평생의 반려자가 되려 합니다.<br>
-            새로운 인생이라는 가장 큰 프로젝트를 시작하는 자리에<br>
-            소중한 분들을 모시오니 따뜻하게 축복해 주시면 감사하겠습니다.
+            같은 학과 동기로 마주해 같은 직장에서 사랑을 키워온 저희가,<br>
+            이제는 서로의 삶을 온전히 함께하는 부부의 연을 맺으려 합니다.<br>
+            오랜 시간 나란히 걸어온 저희 두 사람의 앞날에<br>
+            따뜻한 격려와 축복을 보내주시면 큰 기쁨으로 간직하겠습니다.<br>
         </div>
         
         <!-- 중앙 장식 -->
@@ -232,9 +256,18 @@
             김영택 · 이시은 <span class="parents-relation">의 딸</span> 김한비
         </div>
 
-        <div class="qr-section">
-            <img src="site-qr.svg" alt="" class="qr-img" onerror="this.style.display='none'">
-            <div class="qr-text">모바일 청첩장</div>
+        <div class="section-divider"></div>
+
+        <div class="bottom-info-row">
+            <div class="parking-info">
+                <div class="parking-title">[주차 안내]</div>
+                KU컨벤션웨딩홀 전용주차장 (70대, 2시간 무료)<br>
+                건대 수의과대학 주차장 (1000대, 2시간 무료)
+            </div>
+            <div class="qr-section">
+                <img src="site-qr.svg" alt="" class="qr-img" onerror="this.style.display='none'">
+                <div class="qr-text">모바일 청첩장</div>
+            </div>
         </div>
     </div>
 
